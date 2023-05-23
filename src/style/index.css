@@ -1,0 +1,226 @@
+body {
+  margin: calc(10vh + 24.8px) 0px 0px 0px;
+  color: #ffe81f;
+  background-color: black;
+}
+
+h2 {
+  margin: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+  .navigation > div {
+    font-size: 2rem;
+  }
+  .navigation > div:hover {
+    cursor: pointer;
+  }
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 5px solid #ffe81f;
+  padding: 10px 0px;
+  z-index: 3;
+}
+
+.homeText,
+.navigation > div {
+  margin: 0px 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .homeText {
+    margin: 0px 40px;
+    font-size: 1.5rem;
+  }
+}
+.titleMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleMain {
+    font-size: 2rem;
+    grid-column: 1/4;
+  }
+}
+.titleMainDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.titleMain > button,
+.titleMainDiv > button,
+.detailsOpen > button {
+  background-color: #ffe81f;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleMain > button,
+  .detailsOpen > button,
+  .titleMainDiv > button {
+    font-size: 1.25rem;
+  }
+}
+.mappedBox {
+  box-sizing: content-box;
+  margin: 0px 10px 10px;
+  border: 2px solid #ffe81f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mappedBox > button {
+  margin-top: 5px;
+}
+
+.detailsOpen > button {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mappedTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mappedTitle {
+    font-size: 1.5rem;
+  }
+}
+.editingBox {
+  margin: 10px;
+  border: 2px solid #ffe81f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.editingBox > div {
+  font-size: 1.5rem;
+}
+
+.editingForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addNewBox {
+  border: 2px solid #ffe81f;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .addNewBox {
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    right: 0;
+    font-size: 1.25rem;
+    min-width: 20vw;
+    padding: 10px;
+  }
+}
+.addNewBox > div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.addNewForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.editingForm > input,
+.addNewForm > input {
+  margin: 5px 0px;
+}
+
+.editingForm > button,
+.addNewForm > button {
+  background-color: #ffe81f;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .editingForm > button,
+  .addNewForm > button {
+    font-size: 1.25rem;
+  }
+}
+.detailsOpen {
+  font-size: 1.5rem;
+  margin: 5px 10px;
+  border: 5px solid #ffe81f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .detailsOpen {
+    max-width: 25vw;
+    margin: 0px auto;
+  }
+}
+.detailsDes {
+  font-weight: bold;
+}
+
+.loading {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2rem;
+}/*# sourceMappingURL=index.css.map */
